@@ -8,6 +8,7 @@ return {
         en = "Keep empowering the weapon quickly until reaching the limit.",
         ja = "限界に達するまで素早く武器を強化し続けます。",
         ["zh-cn"] = "快速强化武器，直到达到限制。",
+        ["zh-tw"] = "快速強化武器，直到上限。",
         ru = "Empower Until Limit - Продолжает быстро усиливать оружие, пока оно не достигнет предела.",
     },
 }
