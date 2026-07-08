@@ -6,12 +6,14 @@ local loc = {
     mod_name = {
         en = "Modular Menu Buttons",
         ["zh-cn"] = "模块化菜单按钮",
+        ["zh-tw"] = "模組化選單按鈕",
         ru = "Кнопки модульного меню",
     },
     mod_description = {
         en = "Allows to customize the buttons displayed in the esc menu.",
         ja = "エスケープメニューに表示されるボタンをカスタマイズできるようにします。",
         ["zh-cn"] = "允许自定义在 Esc 菜单中显示的按钮。",
+        ["zh-tw"] = "允許自訂在 Esc 選單中顯示的按鈕。",
         ru = "Modular Menu Buttons - Позволяет настраивать кнопки, отображаемые в меню ESC.",
     },
     main_menu = {
