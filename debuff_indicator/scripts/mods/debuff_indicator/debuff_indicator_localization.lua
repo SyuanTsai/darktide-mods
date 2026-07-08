@@ -95,21 +95,21 @@ local loc = {
         en = "Debuff Indicator",
         ["zh-cn"] = "负面效果指示器",
         ru = "Индикатор дебаффов",
-        ["zh-tw"] = "Debuff效果顯示器",
+        ["zh-tw"] = "減益效果顯示器",
     },
     mod_description = {
         en = "Display debuffs applied to each enemy and their stacks.",
         ja = "敵に付与されたデバフとそのスタック数を表示します。",
         ["zh-cn"] = "显示敌人受到的负面效果和层数",
         ru = "Debuff Indicator - Отображает дебаффы и количество их зарядов, применённых к каждому врагу.",
-        ["zh-tw"] = "顯示敵人受到的負面效果和層數。",
+        ["zh-tw"] = "顯示每個敵人身上的減益效果及其層數。",
     },
     display_style = {
         en = "Display style",
         ja = "表示スタイル",
         ["zh-cn"] = "显示样式",
         ru = "Стиль отображения",
-        ["zh-tw"] = "顯示方式",
+        ["zh-tw"] = "顯示樣式",
     },
     display_style_options = {
         en = "\nBoth:\nShow debuff name and stack count." ..
@@ -124,7 +124,7 @@ local loc = {
         ru = "\nВсё:\nПоказывать название дебаффа и счётчик стаков." ..
              "\n\nНазвание:\nПоказывать только название дебаффа." ..
              "\n\nСчётчик:\nПоказывать только счётчик стаков (рекомендуется использовать с пользовательскими цветами).",
-        ["zh-tw"] = "\n全部：\n顯示負面效果名稱和層數。" ..
+        ["zh-tw"] = ,
              "\n\n名稱：\n只顯示負面效果名稱。" ..
              "\n\n層數：\n只顯示層數（建議同時設定自訂顏色）。",
     },
@@ -133,14 +133,14 @@ local loc = {
         ja = "両方",
         ["zh-cn"] = "全部",
         ru = "Всё",
-        ["zh-tw"] = "全部",
+        ["zh-tw"] = "兩者",
     },
     display_style_label = {
         en = "Label",
         ja = "ラベル",
         ["zh-cn"] = "名称",
         ru = "Название",
-        ["zh-tw"] = "名稱",
+        ["zh-tw"] = "標籤",
     },
     display_style_count = {
         en = "Count",
@@ -154,21 +154,21 @@ local loc = {
         ja = "キーバインド：次のスタイル",
         ["zh-cn"] = "快捷键：下一个样式",
         ru = "Клавиша: Переключение стилей",
-        ["zh-tw"] = "快捷鍵：下一個樣式",
+        ["zh-tw"] = "快捷鍵：循環切換樣式",
     },
     enable_filter = {
         en = "Display major debuffs only",
         ja = "主要なデバフのみ表示する",
         ["zh-cn"] = "仅显示主要负面效果",
         ru = "Отображать только главные дебаффы",
-        ["zh-tw"] = "僅顯示主要負面效果",
+        ["zh-tw"] = "僅顯示主要減益效果",
     },
     filter_disabled = {
         en = "Display all internal buff and debuff if disabled.",
         ja = "無効にした場合、すべての内部的なバフやデバフが表示されます。",
         ["zh-cn"] = "如果禁用，则会显示所有内部增益和减益。",
         ru = "Отображает все внутренние баффы и дебаффы, если отключено.",
-        ["zh-tw"] = "若停用，則會顯示所有內部增益與減益。",
+        ["zh-tw"] = "停用時，顯示所有內部增益與減益效果。",
     },
     distance = {
         en = "Max distance",
@@ -189,7 +189,7 @@ local loc = {
         ja = "デバフ",
         ["zh-cn"] = "负面效果",
         ru = "Дебафф",
-        ["zh-tw"] = "負面效果",
+        ["zh-tw"] = "減益效果",
     },
     dot = {
         en = "Damage over Time",
@@ -217,7 +217,7 @@ local loc = {
         ja = "フォントスタイル",
         ["zh-cn"] = "字体样式",
         ru = "Стиль шрифта",
-        ["zh-tw"] = "字體樣式",
+        ["zh-tw"] = "字型樣式",
     },
     font_size = {
         en = "Size",
@@ -245,7 +245,7 @@ local loc = {
         ja = "切り替え",
         ["zh-cn"] = "开关",
         ru = "Переключатели",
-        ["zh-tw"] = "開關",
+        ["zh-tw"] = "切換",
     },
     custom_color = {
         en = "Custom color",
@@ -284,14 +284,14 @@ local loc = {
         ja = "通常敵",
         ["zh-cn"] = "普通敌人",
         ru = "Бродяги",
-        ["zh-tw"] = "普通敵人",
+        ["zh-tw"] = "遊蕩敵人",
     },
     breed_elite = {
         en = "Elites",
         ja = "上位者",
         ["zh-cn"] = "精英",
         ru = "Элита",
-        ["zh-tw"] = "菁英",
+        ["zh-tw"] = "精英",
     },
     breed_specialist = {
         en = "Specialists",
@@ -305,7 +305,7 @@ local loc = {
         ja = "バケモノ",
         ["zh-cn"] = "怪物",
         ru = "Монстры",
-        ["zh-tw"] = "怪物",
+        ["zh-tw"] = "巨獸",
     },
     breed_captain = {
         en = "Captains",
@@ -317,6 +317,7 @@ local loc = {
         en = "Miscellaneous",
         ja = "その他",
 		["zh-cn"] = "其他",
+		["zh-tw"] = "雜項",
     },
     bleed = {
         en = "Bleeding",
@@ -327,6 +328,7 @@ local loc = {
     },
     bleed_long = {
         en = "Bleeding (long)",
+        ["zh-tw"] = "撕裂流血（護教軍的爪）",
         ja = "出血（大）",
     },
     flamer_assault = {
@@ -355,15 +357,17 @@ local loc = {
         ja = "感電",
         ["zh-cn"] = "触电",
         ru = "Наэлектризован",
-        ["zh-tw"] = "觸電",
+        ["zh-tw"] = "電擊",
     },
     neurotoxin_interval_buff = {
         en = "Chem Toxin",
         ja = "ケム毒",
 		["zh-cn"] = "化学毒素",
+		["zh-tw"] = "化學毒素",
 	},
     phosphor_burn = {
         en = "Phosphor",
+        ["zh-tw"] = "磷火",
         ja = "フォスフォロス",
 	},
     power_maul_sticky_tick = {
