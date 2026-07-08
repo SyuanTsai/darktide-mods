@@ -90,7 +90,7 @@ local loc = {
         ja = "4桁の識別タグを非表示にする",
         ru = "Скрыть тег игрока (4 цифры)",
         ["zh-cn"] = "隐藏 4 位数 ID 标签",
-        ["zh-tw"] ="隱藏四位數的ID標籤",
+        ["zh-tw"] = "隱藏四位數的ID標籤",
         fr = "Cacher le tag à 4 chiffres",
     },
     cycle_style = {
